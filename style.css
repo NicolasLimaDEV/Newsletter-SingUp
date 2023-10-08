@@ -1,0 +1,162 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+ul li{
+  list-style-type: none;
+}
+
+:root{
+  --tomato:#ff6257;
+  --pink: #FF527B;
+  --orange: #FF6A3A;
+  --darkSlate: hsl(234, 29%, 20%);
+  --charcoal: hsl(235, 18%, 26%);
+  --Grey: hsl(231, 7%, 60%);
+  --white: hsl(0, 0%, 100%);
+}
+
+.container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--charcoal);
+}
+
+.content{
+  display: flex; /* Remove o card */
+
+  padding: 20px;
+  border-radius: 25px;
+  align-items: center;
+
+  background-color: var(--white);
+}
+
+.content-left{
+  padding: 20px;
+}
+
+.content-left h1{
+  font-size: 50px;
+  color: var(--darkSlate);
+}
+
+.content-left p{
+  font-size: 16px;
+  width: 400px;
+  padding: 12px 0px;
+}
+
+.content-left li{
+  display: flex;
+  align-items: center;
+  padding: 10px 0px;
+}
+
+.content-left span{
+  padding-right: 10px;
+}
+
+.content-left form{
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  width: 350px;
+}
+
+.labels{
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  color: var(--darkSlate);
+  font-size: 14px;
+}
+
+#message{
+  display: none;
+  color: var(--tomato);
+}
+
+.content-left form > input{
+  padding: 18px;
+  border-radius: 12px;
+  border: 1px solid var(--Grey);
+  margin: 10px 0px;
+}
+
+.content-left form > input::placeholder{
+  color: var(--Grey);
+}
+
+.content-left form > button{
+  font-weight: 700;
+  padding: 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  border: none;
+
+  background-color: var(--darkSlate);
+  color: var(--white);
+}
+
+.content-left form > button:hover{
+  background: linear-gradient(to left, var(--pink), var(--orange));
+  border: none;
+}
+
+/* Modal card */
+.modal{
+  display: none; /* Alterar com JS para abrir o modal */
+
+  width: 450px;
+  border-radius: 20px;
+  padding: 50px;
+
+  background-color: var(--white);
+}
+
+.modal svg{
+  background-color: var(--tomato);
+  border-radius: 50%;
+}
+
+.modal h1{
+  font-size: 50px;
+  color: var(--charcoal);
+  margin-top: 25px;
+}
+
+.modal p{
+  padding: 15px 0px;
+  font-size: 15px;
+  line-height: 22px;
+  color: var(--charcoal);
+}
+
+.modal button{
+  width: 100%;
+  font-weight: 700;
+  padding: 18px;
+  border-radius: 12px;
+  cursor: pointer;
+  margin: 10px 0px;
+  border: none;
+
+  background-color: var(--darkSlate);
+  color: var(--white);
+}
+
+.modal > button:hover{
+  background: linear-gradient(to left, var(--pink), var(--orange));
+  border: none;
+}
