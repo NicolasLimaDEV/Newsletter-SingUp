@@ -1,0 +1,33 @@
+@media screen and (max-width: 820px){
+  .content-right{
+    display: none;
+  }
+
+  .content{
+    width: 100%;
+    padding: 10px;
+    border-radius: 0px;
+    height: 100vh;
+  }
+
+  .content-left{
+    width: 100%;
+  }
+
+  .content-left h1{
+    font-size: 40px;
+  }
+
+  .content-left p{
+    width: 100%;
+  }
+
+  .content-left form{
+    width: 100%;
+  }
+
+  .modal{
+    height: 100vh;
+    border-radius: 0px;
+  }
+}
